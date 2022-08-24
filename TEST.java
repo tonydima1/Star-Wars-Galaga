@@ -5,9 +5,10 @@
 	
 	
 public class TEST extends JPanel {
+	//THIS IS FOR TESTING IMAGE SPAWING. NOT INVOLVED IN GAME.
 	
-	
-	ImageIcon Tie = new ImageIcon("/Users/tonyd/Downloads/Tie.png");
+	//FIND FILE PATH. PUT IN HERE. 
+	ImageIcon Tie = new ImageIcon("/Users/USERNAME/Downloads/Tie.png");
 	
 	public static void main(String[] args) 
 	{

@@ -20,7 +20,7 @@ public class Alien extends GameObject
 	int fire = 0;
 	int attacking = 0;
 	boolean shot;
-	
+	//YOU NEED TO GET YOUR FILE NAMES FOR SOUNDS HERE. SEE SOURCES IN READ ME FOR YOUTUBE LINKS. WAV FILE NEEDED.
 	File attack = new File("/Users/USERNAME/Downloads/TIE Fighter roar.wav");
 	File fire1 = new File("/Users/USERNAME/Downloads/Tie Fighter Firing laser (Star wars) - Sound Effect.wav");
 	File fire2 = new File("/Users/USERNAME/Downloads/Star Wars Tie fighter blaster sound effect.wav");

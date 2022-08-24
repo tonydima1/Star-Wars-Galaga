@@ -16,19 +16,20 @@ public class GalagaPanel extends JPanel implements KeyListener
 	int startintro = 0;
 	int firecheck = 0;
 	int levelcomplete = 0;
+	//YOU NEED TO GET YOUR FILE NAMES FOR SOUNDS HERE. SEE SOURCES IN READ ME FOR YOUTUBE LINKS. WAV FILE NEEDED.
+	File theme = new File("/Users/USERNAME/Downloads/Star Wars Theme (2019 Remaster) [8 Bit Tribute to John Williams & Star Wars] - 8 Bit Universe.wav");
+	File themeOVER = new File("/Users/USERNAME/Downloads/Star War's Imperial March [8 Bit Tribute to David Prowse (R.I.P.) & John Williams] - 8 Bit Universe.wav");
+	File themeWON = new File("/Users/USERNAME/Downloads/Star Wars Theme (2019 Remaster) [8 Bit Tribute to John Williams & Star Wars] - 8 Bit Universe.wav");
+	File Xwingfire = new File("/Users/USERNAME/Downloads/Star Wars X wing fighter blaster sound effect.wav");
 	
-	File theme = new File("/Users/tonyd/Downloads/Star Wars Theme (2019 Remaster) [8 Bit Tribute to John Williams & Star Wars] - 8 Bit Universe.wav");
 	Clip clip;
-	File themeOVER = new File("/Users/tonyd/Downloads/Star War's Imperial March [8 Bit Tribute to David Prowse (R.I.P.) & John Williams] - 8 Bit Universe.wav");
 	Clip clipOVER;
-	File themeWON = new File("/Users/tonyd/Downloads/Star Wars Theme (2019 Remaster) [8 Bit Tribute to John Williams & Star Wars] - 8 Bit Universe.wav");
 	Clip clipWON;
-	File Xwingfire = new File("/Users/tonyd/Downloads/Star Wars X wing fighter blaster sound effect.wav");
 	Clip clipxwingfire;
 	//list of all objects in game
 	LinkedList<Alien> masterList;
 
-	//ship
+	//ship aka player
 	Ship ship;
 	Bullet bullet, bulletA;
 	
@@ -60,13 +61,13 @@ public class GalagaPanel extends JPanel implements KeyListener
 		catch(Exception e){
 			System.out.println("Failure to run");
 		}
-		
+		//YOU NEED TO PUT THE SPRITE IMAGES HERE
 		//load images
-		space = new ImageIcon("/Users/tonyd/Downloads/deathstar.gif");
-		shippic = new ImageIcon("/Users/tonyd/Downloads/Xwing.png");
-		dumbalien = new ImageIcon("/Users/tonyd/Downloads/TieReg.png");
-		pred = new ImageIcon("/Users/tonyd/Downloads/TieInter.png");
-		seekpic = new ImageIcon("/Users/tonyd/Downloads/TieRed.png");
+		space = new ImageIcon("/Users/USERNAME/Downloads/deathstar.gif");
+		shippic = new ImageIcon("/Users/USERNAME/Downloads/Xwing.png");
+		dumbalien = new ImageIcon("/Users/USERNAME/Downloads/TieReg.png");
+		pred = new ImageIcon("/Users/USERNAME/Downloads/TieInter.png");
+		seekpic = new ImageIcon("/Users/USERNAME/Downloads/TieRed.png");
 
 		//add a ship to the game
 		ship = new Ship();
@@ -86,7 +87,7 @@ public class GalagaPanel extends JPanel implements KeyListener
 		ut.start();
 		
 		
-		//stupid key listener stuff
+		//check inputs
 		addKeyListener(this);
 		setFocusable(true);
 	}
@@ -120,7 +121,7 @@ public class GalagaPanel extends JPanel implements KeyListener
 			g.setColor(Color.YELLOW);
 			g.drawString("STAR WARS", 150, 250);
 		}
-		/*    *^* CHANGE IF STATEMENT BELOW if(masterList.size() == 1 && level == 2)
+		/*    *^* CHANGE IF STATEMENT BELOW if(go.size() == 1 && level == 2) makes listlength useless.
 		* Change other level transition if statements accordingly
 		*/
 		if(dead == listlength && level == 2)
@@ -506,6 +507,9 @@ public class GalagaPanel extends JPanel implements KeyListener
 			go.update();
 			if(bullet.intersects(go))
 			{
+				//bullet is attached to alien object so if an alien dies but it shot it would remove it. This fixes it for one alien only.
+				//Will be improved. A quick 2 kills on 2 aliens that just shot would only see one bullet remaining. 
+				//you will see this minor 'issue' in game
 				if(go.bullet.x > 0 && go.bullet.y > 0) {
 					bulletA.y = go.bullet.y;
 					bulletA.x = go.bullet.x;

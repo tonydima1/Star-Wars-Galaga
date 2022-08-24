@@ -3,7 +3,7 @@ Galaga like game with Star Wars theme.
 
 Unfortunaly to have sounds and sprites it would be needed to download the sprites/sounds (png/wav files). Find their directory and place them as I have instructed in the programs. It is not exactly like Galaga, but it is very similar.
 
-Controls Left and Right Arrow Keys. Space to Fire and Start Game. If you move off screen you die.
+Controls Left and Right Arrow Keys. Space to Fire and Start Game. If you move off screen you instantly perish (NO CHEATING!).
 
 Special Features of Game Include:
 

@@ -9,6 +9,8 @@ Special Features of Game Include:
 
 -Start Screen.
 
+-Enemies fly in formation, and can attack in formations.
+
 -2 Waves of enemies.
 
 -3 types of enemies. With different types of movements & attacks.
@@ -24,6 +26,14 @@ Special Features of Game Include:
 -Sounds.
 
 I am going to add more in the future.
+Sample Screenshots:
+Wave 1 with action:
+
+![GameShot1](https://user-images.githubusercontent.com/83630085/186368256-20b251cc-de14-41c7-a69e-22c47d056944.png)
+
+Wave 2 just before action (right when it spawns in):
+
+![GameShot2](https://user-images.githubusercontent.com/83630085/186368284-066b2011-d4f6-4165-88ee-92b8d10c16ff.png)
 
 Special Features of code:
 

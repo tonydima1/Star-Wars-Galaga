@@ -11,6 +11,8 @@ Special Features of Game Include:
 
 -Enemies fly in formation, and can attack in formations.
 
+-Enemies Hover in formation before attacking, and return to formation after attacking.
+
 -2 Waves of enemies.
 
 -3 types of enemies. With different types of movements & attacks.

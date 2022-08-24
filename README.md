@@ -28,7 +28,7 @@ Special Features of Game Include:
 I am going to add more in the future.
 Sample Screenshots:
 
-Wave 1 with action (enemies fly through each other to get back to original spot and the bullets when just fired come out of the middle of the enemy hence the clipping there (The enemy bullet spawning could be changed by just changing the spawn addition values to higher numbers but when testing/playing I prefered the center):
+Wave 1 with action (enemies fly through each other to get back to original spot (Like Galaga!) and the bullets when just fired come out of the middle of the enemy hence the clipping there (The enemy bullet spawning could be changed by just changing the spawn addition values to higher numbers but when testing/playing I prefered the center):
 
 ![GameShot1 (3)](https://user-images.githubusercontent.com/83630085/186369064-964eb3d5-98f8-4fd9-9fda-37abc69f5793.png)
 

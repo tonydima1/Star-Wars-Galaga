@@ -21,10 +21,10 @@ public class Alien extends GameObject
 	int attacking = 0;
 	boolean shot;
 	
-	File attack = new File("/Users/tonyd/Downloads/TIE Fighter roar.wav");
-	File fire1 = new File("/Users/tonyd/Downloads/Tie Fighter Firing laser (Star wars) - Sound Effect.wav");
-	File fire2 = new File("/Users/tonyd/Downloads/Star Wars Tie fighter blaster sound effect.wav");
-	File firemissile = new File("/Users/tonyd/Downloads/Star Wars Ion Cannon Sound Effect.wav");
+	File attack = new File("/Users/USERNAME/Downloads/TIE Fighter roar.wav");
+	File fire1 = new File("/Users/USERNAME/Downloads/Tie Fighter Firing laser (Star wars) - Sound Effect.wav");
+	File fire2 = new File("/Users/USERNAME/Downloads/Star Wars Tie fighter blaster sound effect.wav");
+	File firemissile = new File("/Users/USERNAME/Downloads/Star Wars Ion Cannon Sound Effect.wav");
 	Clip clipmissile;
 	Clip clipattack;
 	Clip clipfire1;

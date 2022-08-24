@@ -6,6 +6,7 @@ import java.io.File;
 
 
 public class Sound {
+	//THIS IS ONLY FOR TESTING SOUND EFFECTS. NOT INVOLVED IN GAME.
 	public static void main(String[] args)
 	{
 		File theme = new File("name");

@@ -19,6 +19,7 @@ public class GalagaPanel extends JPanel implements KeyListener
 	//YOU NEED TO GET YOUR FILE NAMES FOR SOUNDS HERE. SEE SOURCES IN READ ME FOR YOUTUBE LINKS. WAV FILE NEEDED.
 	File theme = new File("/Users/USERNAME/Downloads/Star Wars Theme (2019 Remaster) [8 Bit Tribute to John Williams & Star Wars] - 8 Bit Universe.wav");
 	File themeOVER = new File("/Users/USERNAME/Downloads/Star War's Imperial March [8 Bit Tribute to David Prowse (R.I.P.) & John Williams] - 8 Bit Universe.wav");
+	//going to change themeWON which is why I made a new variable but it is the same sound
 	File themeWON = new File("/Users/USERNAME/Downloads/Star Wars Theme (2019 Remaster) [8 Bit Tribute to John Williams & Star Wars] - 8 Bit Universe.wav");
 	File Xwingfire = new File("/Users/USERNAME/Downloads/Star Wars X wing fighter blaster sound effect.wav");
 	
